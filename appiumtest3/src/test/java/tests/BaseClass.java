@@ -37,7 +37,12 @@ public class BaseClass {
 		caps.setCapability(MobileCapabilityType.UDID, "42009deff2399333");
 		caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "100");
 		//caps.setCapability(MobileCapabilityType.APP,"");
-		caps.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
+		//caps.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
+		
+		//caps.setCapability(MobileCapabilityType.APP, "com.android.chrome");
+		//caps.setCapability(MobileCapabilityType.A, "com.google.android.apps.chrome.Main");
+		caps.setCapability("appPackage", "com.android.chrome");
+		caps.setCapability("appActivity", "com.google.android.apps.chrome.Main");
 		
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		driver = new AppiumDriver<MobileElement>(url, caps);
