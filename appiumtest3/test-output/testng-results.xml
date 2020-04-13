@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-13T12:31:41 BDT" name="Default suite" finished-at="2020-04-13T12:31:50 BDT" duration-ms="9608">
+  <suite started-at="2020-04-13T12:35:57 BDT" name="Default suite" finished-at="2020-04-13T12:36:07 BDT" duration-ms="9539">
     <groups>
     </groups>
-    <test started-at="2020-04-13T12:31:41 BDT" name="Default test" finished-at="2020-04-13T12:31:50 BDT" duration-ms="9608">
+    <test started-at="2020-04-13T12:35:57 BDT" name="Default test" finished-at="2020-04-13T12:36:07 BDT" duration-ms="9539">
       <class name="tests.Tests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2020-04-13T12:31:41 BDT" name="setup" finished-at="2020-04-13T12:31:50 BDT" duration-ms="9586" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2020-04-13T12:35:57 BDT" name="setup" finished-at="2020-04-13T12:36:07 BDT" duration-ms="9516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestOne()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2020-04-13T12:31:50 BDT" name="TestOne" finished-at="2020-04-13T12:31:50 BDT" duration-ms="3" status="FAIL">
+        <test-method signature="TestOne()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2020-04-13T12:36:07 BDT" name="TestOne" finished-at="2020-04-13T12:36:07 BDT" duration-ms="3" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -50,7 +50,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestOne -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2020-04-13T12:31:50 BDT" name="teardown" finished-at="2020-04-13T12:31:50 BDT" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2020-04-13T12:36:07 BDT" name="teardown" finished-at="2020-04-13T12:36:07 BDT" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException

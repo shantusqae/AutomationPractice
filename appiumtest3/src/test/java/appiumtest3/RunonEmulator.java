@@ -2,7 +2,9 @@
 
 	import java.net.URL;
 
-	import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 	import io.appium.java_client.AppiumDriver;
 	import io.appium.java_client.MobileElement;
@@ -26,14 +28,21 @@
 				//caps.setCapability("udid", "42009deff2399333"); //Give Device ID of your mobile phone
 				caps.setCapability("platformName", "Android");
 				caps.setCapability("platformVersion", "9.0");
-				caps.setCapability("appPackage", "com.android.chrome");
-				caps.setCapability("appActivity", "com.google.android.apps.chrome.Main");
+				caps.setCapability("browserName", "chrome");
+				//caps.setCapability("appPackage", "com.android.chrome");
+				//caps.setCapability("appActivity", "com.google.android.apps.chrome.Main");
 				caps.setCapability("noReset", "true");
 				
-				
+				caps.setCapability("skip_first_run_ui", "true");
+							
 				URL url = new URL("http://127.0.0.1:4723/wd/hub");
 				
 				driver = new AppiumDriver<MobileElement>(url, caps);
+				
+				Thread.sleep(10000);
+				driver.get("www.google.com");
+				driver.findElement(By.name("q")).sendKeys("Automation");
+				driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 			}
 		}
 
